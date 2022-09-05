@@ -4,40 +4,38 @@ using namespace std;
 int main() {
         int a, b, c; 
         cin >> a >> b >> c;
-        int max;
+        int max, middl, min;
         if (a > b && a > c) {
             max = a;
             if(b > c) {
-                cout << a << endl << b << endl << c;
-                cout << endl << endl;
-                cout << a << endl << b << endl << c;
+            middl = b;
+            min = c;
             } else {
-                cout << a << endl << c << endl << b;
-                cout << endl << endl;
-                cout << a << endl << b << endl << c;
+            middl = c;
+            min = b;
             }
         } else if (b > a && b > c) {
             max = b;
             if(a > c) {
-                cout << b << endl << a << endl << c;
-                cout << endl << endl;
-                cout << a << endl << b << endl << c;
+              middl = a;
+              min = c;
             } else {
-                cout << b << endl << c << endl << a;
-                cout << endl << endl;
-                cout << a << endl << b << endl << c;
+               middl = c;
+               min = a;
             }
         } else if (c > a && c > b) {
             max = c;
             if(a > b) {
-                cout << c << endl << a << endl << b;
-                cout << endl << endl;
-                cout << a << endl << b << endl << c;
+               middl = a;
+               min = b;
             } else {
-                cout << c << endl << b << endl << a;
-                cout << endl << endl;
-                cout << a << endl << b << endl << c;
+               middl = b;
+               min = a;
             }
-        };    
+        };
+        cout << min << " " << middl << " " << max;
+        cout << endl << endl;
+        cout << a << " " << b << " " << c;
+        
     return 0;
-};      
+}; 
