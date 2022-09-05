@@ -38,9 +38,6 @@ int main() {
                 cout << endl << endl;
                 cout << a << endl << b << endl << c;
             }
-        };
-        
+        };    
     return 0;
-}; 
-
-         
+};      
