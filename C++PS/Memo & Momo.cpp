@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-        int a,b ,k;
+        long long a,b ,k;
         cout << "Insert The Main Value k \n"; 
         cin >> k;
         cout << "Insert Ur Name Memo \n"; cin >> a;
