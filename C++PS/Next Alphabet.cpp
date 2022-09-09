@@ -5,9 +5,8 @@ int main() {
    int i = 1;
    do {
         char c; cin >> c;
-          if (c == 'z') {
+          if (c == 'z') 
             c = '`';
-        }
         c++;
          cout << c;
    } while(i < 10);
