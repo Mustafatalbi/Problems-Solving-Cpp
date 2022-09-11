@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
         int eye, mouth, body; int res = 0;
-        cin >> eye >> mouth >> body;
+        cin >> eye >> mouth >> body;  // 12 5 11 
         if (eye == 0 || body == 0) {
             cout << 0;
         } else { // eye - mouth - body
@@ -13,10 +13,10 @@ int main() {
                 res = min(eye,body);
                 cout << res << endl;
             } else if (mouth < body && mouth < eye) {
-                res = mouth;
-                eye-=mouth;
-                body-=mouth;
-                res+= min(eye/2, body);
+                res = mouth; // 5 
+                eye-=mouth; // 12 - 5 = 7 / 2 = 3.5 (int = 3);
+                body-=mouth; // 11  - 5 = 6 
+                res+= min(eye/2, body); // 5 + 3.5 = 8.5 
                 cout << res;
             }
         }
