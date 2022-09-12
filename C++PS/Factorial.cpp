@@ -6,7 +6,7 @@ int rec(int x) {
 		return 1;
   	else 
 		return x*rec(x-1);
-
+};
 int main() {
 	int n; cin >> n;
 		cout << rec(n);
