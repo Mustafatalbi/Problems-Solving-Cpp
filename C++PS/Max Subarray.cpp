@@ -25,7 +25,7 @@ int main() {
                      i++;
                      if (i == loop - 1) {
                          z++;
-                         i = 1; // jrb i = 1;
+                         i = z; // jrb i = 1;
                          break;
                      }
                  }
