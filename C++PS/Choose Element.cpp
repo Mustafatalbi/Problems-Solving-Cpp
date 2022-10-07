@@ -12,9 +12,14 @@ int main() {
            sort(a,a+size);
            reverse(a,a+size);
           
-            for(long long i=0; i<choose; i++) 
+            for(long long i=0; i<choose; i++) {
+                if (a[i] > 0) {
                 sum+=a[i];
-            
+                } else {
+                    sum+=0;
+                }
+            }
         cout << sum << endl;
     return 0;
 }; 
+
